@@ -1,60 +1,104 @@
-<html><head>
-		<title>cooking with Nouha-Chahd</title>
-		
-	</head>
-	<center> 
-<Body bgcolor="white">
-<header>
-<h1>welcome to our kitchen !</h1>
-</header>
-<hr color="pink" size="6px">
-<nav> Made by Chahd and Nouha </nav>
-<hr color="pink" size="6px">
- <style>
-    body {
-      background-color: white;
-      font-family: Arial, sans-serif;
-    }
-    
-    h1 {
-      color: pink;
-      text-align: center;
-    }
-    
-   
-    img{ 
-      width: 20%;
-      border-radius: 8%;
-      
-      }
-      section{text-align:center;margin-left:auto; margin-right:auto;}
-  </style>
-  
-<section>
-	
-<b><font size="5" color=#AAD4EF>Here are four recipes you will definetly like:</font></b>
-</section></center>
-
-<p>
-<section>
-<a href="cookies.html"> <img src="coucou.jpg" ></a>
-</section>
-</p>
-<p>
-<section>
-<a href="pancake.html"><img src="pancake1.jpg" ></a>
-</section>
-</p>
-<p>
-<section>
-<a href="pasta.html"><img src="pates.jpg"></a>
-</section>
-</p>
-<p>
-<section>
-<a href="lasagna.html"><img src="lasagna.jpg"></a>
-</section>
-</p>
-
-
-</body></html>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking with Nouha-Chahd</title>
+    <style>
+        body {
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffcccc;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            color: #ff0066;
+            margin: 0;
+        }
+        nav {
+            background-color: #ff99cc;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            border-bottom: 2px solid #ff0066;
+        }
+        section {
+            text-align: center;
+            margin: 20px;
+        }
+        .recipes-title {
+            color: #AAD4EF;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .recipe-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .recipe-links a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .recipe-item {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+            width: 200px;
+        }
+        .recipe-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .recipe-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .recipe-item-title {
+            padding: 10px;
+            background-color: #ff99cc;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to our kitchen!</h1>
+    </header>
+    <nav>Made by Chahd and Nouha</nav>
+    <section>
+        <div class="recipes-title">Here are four recipes you will definitely like:</div>
+        <div class="recipe-links">
+            <a href="cookies.html" class="recipe-item">
+                <img src="coucou.jpg" alt="Cookies">
+                <div class="recipe-item-title">Cookies</div>
+            </a>
+            <a href="pancake.html" class="recipe-item">
+                <img src="pancake1.jpg" alt="Pancakes">
+                <div class="recipe-item-title">Pancakes</div>
+            </a>
+            <a href="pasta.html" class="recipe-item">
+                <img src="pates.jpg" alt="Pasta">
+                <div class="recipe-item-title">Pasta</div>
+            </a>
+            <a href="lasagna.html" class="recipe-item">
+                <img src="lasagna.jpg" alt="Lasagna">
+                <div class="recipe-item-title">Lasagna</div>
+            </a>
+        </div>
+    </section>
+</body>
+</html>
